@@ -1,6 +1,5 @@
-FROM ruby:2.3.3-slim
+FROM ruby:2.3.3
 
 COPY Gemfile .
 
-RUN apt-get update -qq && apt-get install -y openssh-client
 RUN bundle install
